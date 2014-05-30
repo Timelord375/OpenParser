@@ -213,3 +213,9 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+assets/img/dark_days_dash.png
+assets/img/dark_hours_dash.png
+assets/img/dark_minutes_dash.png
+assets/img/dark_seconds_dash.png
+assets/img/dark_weeks_dash.png
+assets/js/jquery.lwtCountdown-1.0.js
