@@ -1,4 +1,4 @@
-	<div class="tabbable tabs-below">
+<div class="tabbable tabs-below">
 		<ul class="nav nav-tabs">
 			<li <?php if ($_SERVER['SCRIPT_NAME'] === '/index.php') {echo'class="active"';}?>><a href="index.php?cp=<?php echo $currentplanet; ?>">Home</a></li>
 			<li <?php if ($_SERVER['SCRIPT_NAME'] === '/search.php') {echo'class="active"';}?>><a href="search.php?cp=<?php echo $currentplanet; ?>">Search</a></li>

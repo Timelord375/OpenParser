@@ -1,6 +1,6 @@
 <?php
 //SET PARSER VERSION
-$version = "1.0.2";
+$version = "1.0.8";
 
 //CONNECT TO DATABASE
 include('config.php');

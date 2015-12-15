@@ -21,7 +21,5 @@
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="./assets/ico/favicon.ico">
-	
-
   </head>
   <body>

@@ -5,52 +5,64 @@
 // @include		  *stardriftempires.syfygames.com/galaxy*
 // @include       *playstarfleet.com/galaxy*
 // @include       *playstarfleetextreme.com/galaxy*
-// @version       1.0.1
+// @version       1.0.5
 // ==/UserScript==
 // Thanks to Lytjohan and Eljer for letting me base this off their userscripts and Rob for help in writing more compressed code!
 
 (function(){
 
 	//VERSION INFO
-	var version = "1.0.2";
+	var version = "1.0.8";
 	
 	//SET UPLOAD PATH BASED ON GAME!
 	var servers = {
-		"stardriftempires.com":"sde.openparser.com",
-		"fb.stardriftempires.com":"sde.openparser.com",
-		"ssl.fb.stardriftempires.com":"sde.openparser.com",
-		"stardriftempires.syfygames.com":"sde.openparser.com",
-		"kong.stardriftempires.com":"sde.openparser.com",
-		"playstarfleet.com":"sfo.openparser.com",
-		"fb.playstarfleet.com":"sfo.openparser.com",
-		"ssl.fb.playstarfleet.com":"sfo.openparser.com",
-		"uni2.playstarfleet.com":"uni2.openparser.com",
-		"fb.uni2.playstarfleet.com":"uni2.openparser.com",
-		"ssl.fb.uni2.playstarfleet.com":"uni2.openparser.com",
-		"playstarfleetextreme.com":"x1.openparser.com",
-		"fb.playstarfleetextreme.com":"x1.openparser.com",
-		"ssl.fb.playstarfleetextreme.com":"x1.openparser.com",
-		"uni2.playstarfleetextreme.com":"x2.openparser.com",
-		"fb.uni2.playstarfleetextreme.com":"x2.openparser.com",
-		"ssl.fb.uni2.playstarfleetextreme.com":"x2.openparser.com",
-		"nova.playstarfleet.com":"nova.openparser.com",
-		"fb.nova.playstarfleet.com":"nova.openparser.com",
-		"ssl.fb.nova.playstarfleet.com":"nova.openparser.com",
-		"tournament.playstarfleet.com":"tournament.openparser.com",
-		"fb.tournament.playstarfleet.com":"tournament.openparser.com",
-		"ssl.fb.tournament.playstarfleet.com":"tournament.openparser.com",
-		"nova.stardriftempires.com":"sdenova.openparser.com",
-		"fb.nova.stardriftempires.com":"sdenova.openparser.com",
-		"ssl.fb.nova.stardriftempires.com":"sdenova.openparser.com",
-		"conquest.playstarfleet.com":"conquest.openparser.com",
-		"fb.conquest.playstarfleet.com":"conquest.openparser.com",
-		"ssl.fb.conquest.playstarfleet.com":"conquest.openparser.com",
-		"guns.playstarfleet.com":"guns.openparser.com",
-		"fb.guns.playstarfleet.com":"guns.openparser.com",
-		"ssl.fb.guns.playstarfleet.com":"guns.openparser.com",	
-		"uni3.playstarfleet.com":"uni3.openparser.com",
-		"fb.uni3.playstarfleet.com":"uni3.openparser.com",
-		"ssl.fb.uni3.playstarfleet.com":"uni3.openparser.com",			
+		"stardriftempires.com":"sde.siteurl.com",
+		"fb.stardriftempires.com":"sde.siteurl.com",
+		"ssl.fb.stardriftempires.com":"sde.siteurl.com",
+		"stardriftempires.syfygames.com":"sde.siteurl.com",
+		"kong.stardriftempires.com":"sde.siteurl.com",
+		"playstarfleet.com":"sfo.siteurl.com",
+		"fb.playstarfleet.com":"sfo.siteurl.com",
+		"ssl.fb.playstarfleet.com":"sfo.siteurl.com",
+		"uni2.playstarfleet.com":"uni2.siteurl.com",
+		"fb.uni2.playstarfleet.com":"uni2.siteurl.com",
+		"ssl.fb.uni2.playstarfleet.com":"uni2.siteurl.com",
+		"playstarfleetextreme.com":"x1.siteurl.com",
+		"fb.playstarfleetextreme.com":"x1.siteurl.com",
+		"ssl.fb.playstarfleetextreme.com":"x1.siteurl.com",
+		"uni2.playstarfleetextreme.com":"x2.siteurl.com",
+		"fb.uni2.playstarfleetextreme.com":"x2.siteurl.com",
+		"ssl.fb.uni2.playstarfleetextreme.com":"x2.siteurl.com",
+		"nova.playstarfleet.com":"nova.siteurl.com",
+		"fb.nova.playstarfleet.com":"nova.siteurl.com",
+		"ssl.fb.nova.playstarfleet.com":"nova.siteurl.com",
+		"tournament.playstarfleet.com":"tournament.siteurl.com",
+		"fb.tournament.playstarfleet.com":"tournament.siteurl.com",
+		"ssl.fb.tournament.playstarfleet.com":"tournament.siteurl.com",
+		"nova.stardriftempires.com":"sdenova.siteurl.com",
+		"fb.nova.stardriftempires.com":"sdenova.siteurl.com",
+		"ssl.fb.nova.stardriftempires.com":"sdenova.siteurl.com",
+		"conquest.playstarfleet.com":"conquest.siteurl.com",
+		"fb.conquest.playstarfleet.com":"conquest.siteurl.com",
+		"ssl.fb.conquest.playstarfleet.com":"conquest.siteurl.com",
+		"guns.playstarfleet.com":"guns.siteurl.com",
+		"fb.guns.playstarfleet.com":"guns.siteurl.com",
+		"ssl.fb.guns.playstarfleet.com":"guns.siteurl.com",	
+		"uni3.playstarfleet.com":"uni3.siteurl.com",
+		"fb.uni3.playstarfleet.com":"uni3.siteurl.com",
+		"ssl.fb.uni3.playstarfleet.com":"uni3.siteurl.com",	
+		"eradeon.playstarfleet.com":"eradeon.siteurl.com",
+		"fb.eradeon.playstarfleet.com":"eradeon.siteurl.com",
+		"ssl.fb.eradeon.playstarfleet.com":"eradeon.siteurl.com",	
+		"eradeon2.playstarfleet.com":"eradeon2.siteurl.com",
+		"fb.eradeon2.playstarfleet.com":"eradeon2.siteurl.com",
+		"ssl.fb.eradeon2.playstarfleet.com":"eradeon2.siteurl.com",
+		"eradeon3.playstarfleet.com":"eradeon3.siteurl.com",
+		"fb.eradeon3.playstarfleet.com":"eradeon3.siteurl.com",
+		"ssl.fb.eradeon3.playstarfleet.com":"eradeon3.siteurl.com",
+		"conquest2.playstarfleet.com":"conquest2.siteurl.com",
+		"fb.conquest2.playstarfleet.com":"conquest2.siteurl.com",
+		"ssl.fb.conquest2.playstarfleet.com":"conquest2.siteurl.com",
 	};
 	var domain = servers[window.location.hostname];
 	if(!domain)return;
@@ -240,7 +252,7 @@
 		var d = document;
 		var scr = d.createElement('script');
 		scr.type = "text/javascript";
-		scr.src = 'http://openparser.com/open_parser_server.js';
+		scr.src = 'http://siteurl.com/open_parser_server.js';
 		d.getElementsByTagName('head')[0].appendChild(scr);
 	}
 	

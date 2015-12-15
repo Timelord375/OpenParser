@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 //INCLUDE THE CONFIGURATION / CONNECT TO DATABASE
 include('config.php'); 
 
@@ -15,7 +15,7 @@ if ($is_uni === 'null'){ ?>
             </div>
             <div id="collapseOne" class="accordion-body in collapse" style="height: auto; ">
                 <div class="accordion-inner">
-					<p>Open Parser is a Galaxy Parser for all <a href="http://uni3.playstarfleet.com" target="_blank">Starfleet Commander</a> and <a href="http://www.stardriftempires.com" target="_blank">Stardrift Empires</a> Universes and is based on code by Lytjohan and Eljer. It was written by Matt Hirschfelt with assistance from Eljer, Lytjohan, and FatBuddha. This parser is not an official Blue Frog Gaming product. As such, use is at your own risk and Blue Frog Gaming will be unable to assist you should the parser interfere with your game play or if the parser stops working.</p>
+					<p>Open Parser is a Galaxy Parser for all <a href="http://nova.playstarfleet.com" target="_blank">Starfleet Commander</a> and <a href="http://www.stardriftempires.com" target="_blank">Stardrift Empires</a> Universes and is based on code by Lytjohan and Eljer. It was written by Matt Hirschfelt with assistance from Eljer, Lytjohan, and FatBuddha. This parser, while created and maintained by Matt Hirschfelt, is not an official Blue Frog Gaming product. As such, use is at your own risk and Blue Frog Gaming will be unable to assist you should the parser interfere with your game play or if the parser stops working.</p>
 				</div>
             </div>
         </div>
@@ -39,7 +39,7 @@ if ($is_uni === 'null'){ ?>
                 <div class="accordion-inner">
 					<p>Unlike many other parsers available for Starfleet Commander and Stardrift Empires, Open Parser only requires one script for all of the Universes. Once the script is installed, make sure it is enabled. After that, there is nothing further for you do. Open Parser will attempt to automatically notify you if an update becomes available.</p>
 					<div align="center">
-						<a href="open_parser.user.js" class="btn btn-primary btn-large">Download Here</a>
+						<a href="http://siteurl.com/open_parser.user.js" class="btn btn-primary btn-large">Download Here</a>
 					</div><br />
 					<p>If you are having trouble installing the parser, please see our Frequently Asked Questions.</p>
                 </div>
@@ -99,14 +99,14 @@ if ($is_uni === 'null'){ ?>
 			<div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
 				<div class="accordion-inner">
 					<h2>How do I install the parser with chrome?</h2>
-					<p><a href="open_parser.user.js">Download Open Parser</a> to your computer. Once downloaded you will need to drag the file from the location you downloaded it to on to your Extensions page. When you drop it on to the Extensions page you will be prompted to install the script. Click Add and you are ready to start browsing the galaxies and using the database.</p>
+					<p><a href="http://siteurl.com/open_parser.user.js">Download Open Parser</a> to your computer. Once downloaded you will need to drag the file from the location you downloaded it to on to your Extensions page. When you drop it on to the Extensions page you will be prompted to install the script. Click Add and you are ready to start browsing the galaxies and using the database.</p>
 					<div align="center">
 						<img src="./assets/img/chrome.jpg">
 					</div><br />
 					<p>As an alternative, you can download <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCMQFjAA&url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fdhdgffkkebhmkfjojejmpbldmpobfkfo&ei=T3lTUIOFOMrZ0QHtk4HwCA&usg=AFQjCNEuGCaEhQdMnXMXtVoDxwgeZKrxqw&sig2=if87f4k_VqMwyAck6tQzsw" target="_blank">Tampermonkey</a> from the Chrome Web Store. Installation is then similar to with Firefox.</p>
 					<br />
 					<h2>How do I install the parser with Firefox?</h2>
-					<p>To use the parser with Firefox you need to first install <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">GreaseMonkey</a> as this is what allows userscripts to run on Firefox. Once you have installed GreaseMonkey, <a href="open_parser.user.js">download Open Parser</a>. You will then also be prompted to install the script as shown below. Once installed you are ready to start browsing the galaxies and using the database.</p>
+					<p>To use the parser with Firefox you need to first install <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">GreaseMonkey</a> as this is what allows userscripts to run on Firefox. Once you have installed GreaseMonkey, <a href="http://siteurl.com/open_parser.user.js">download Open Parser</a>. You will then also be prompted to install the script as shown below. Once installed you are ready to start browsing the galaxies and using the database.</p>
 					<div align="center">
 						<img src="./assets/img/firefox.jpg">
 					</div>
@@ -124,7 +124,7 @@ if ($is_uni === 'null'){ ?>
             </div>
 			<div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
 				<div class="accordion-inner">
-					<p>How to get help!</p>
+					<p>Matt is available on Skype at <a href="skype:MattH_BFG?chat">MattH_BFG</a> or by e-mail at <a href="mailto:matt@openparser.com">matt@openparaser.com</a>.</p>
 
                 </div>
             </div>

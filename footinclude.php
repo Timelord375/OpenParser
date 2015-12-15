@@ -1,7 +1,7 @@
 <div style="clear:both;"></div>
 	<hr />
 	<footer>
-        <div style="float:left"><p>&copy; <a href="http://www.matthirschfelt.com/" target="_blank">Matt Hirschfelt</a> <?php echo date('Y'); ?> | <a href="pp.php">Privacy Policy</a></p></div>
+        <div style="float:left"><p>&copy; <a href="https://github.com/MattHirschfelt/OpenParser" target="_blank">Matt Hirschfelt</a> <?php echo date('Y'); ?> | <a href="pp.php">Privacy Policy</a></p></div>
 </div>
     </footer>
 
