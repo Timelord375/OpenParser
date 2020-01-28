@@ -49,6 +49,14 @@ if(isset($_SERVER['SERVER_NAME'])){
 			$is_uni = 'x2';
 			$bootstrap = 'red_bootstrap';
 		break;
+			case 'x6.siteurl.com':
+			$database = 'db_name_x6_parser'; //X6 Parser Database
+			$site_title = 'Open Parser for Starfleet Commander Extreme 6';
+			$game_url = 'https://x6.playstarfleet.com';
+			$galaxy_count = 9;
+			$is_uni = 'x6';
+			$bootstrap = 'red_bootstrap';
+		break;
 		case 'nova.siteurl.com':
 			$database = 'db_name_nova_parser'; //Nova Parser Database
 			$site_title = 'Open Parser for Starfleet Commander Nova';
